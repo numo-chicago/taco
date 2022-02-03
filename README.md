@@ -1,6 +1,6 @@
 # Tool for Assessing Computer Operators (🌮)
 
-TACO started out as Medium's [career growth](https://medium.com/s/engineering-growth-framework) tool. It was compatible enough with how we do things at Forager that we forked it and adapted it for our own use.
+TACO started out as Medium's [career growth](https://medium.com/s/engineering-growth-framework) tool. It was rewritten in TypeScript and refactored for easy alterations.
 
 This is very much a work in progress and anything here many change at any time. We will continue iterating as we learn more.
 
