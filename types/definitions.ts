@@ -16,8 +16,7 @@ export enum Tracks {
   Ops,
   // Craft
   Architecture,
-  Quantity,
-  Quality,
+  Product,
   // Professional
   Independence,
   Organization,
@@ -47,18 +46,28 @@ export const milestonesToPoints = {
  * Sub-levels indicated by a decimal receive different compensation but are grouped into the same title.
  */
 export const pointsToLevels = {
-  "0": "0",
-  "15": "1.1", // 15x1
-  "23": "1.2",
-  "31": "1.3",
-  "42": "2.1", // 14x3
-  "56": "2.2",
-  "70": "2.3",
-  "89": "3.1", // 13x6
-  "104": "3.2",
-  "120": "4.1", // 12x10
-  "140": "4.2",
-  "165": "5", // 11x15
+  // 14x1
+  // +8
+  "14": "1.1",
+  "22": "1.2",
+  "30": "1.3",
+  // 13x3
+  // +10
+  "39": "2.1",
+  "49": "2.2",
+  "59": "2.3",
+  // 12x6
+  // +12
+  "72": "3.1",
+  "84": "3.2",
+  "96": "3.3",
+  // 11x10
+  // +13
+  "110": "4.1",
+  "123": "4.2",
+  "136": "4.3",
+  // 10x15
+  "150": "5",
 };
 
 /**
@@ -508,65 +517,71 @@ export const trackDefinitions: TrackDefinition[] = [
     ],
   },
   <TrackDefinition>{
-    track: Tracks.Quantity,
-    category: Categories.Craft,
-    description: "Amount of output divided by time (purely subjective for now)",
-    milestones: [
-      {
-        // 0
-        summary: "Lowest 15th percentile speed",
-      },
-      {
-        // 1
-        summary: ">15th percentile speed",
-      },
-      {
-        // 2
-        summary: ">30th percentile speed",
-      },
-      {
-        // 3
-        summary: ">45th percentile speed",
-      },
-      {
-        // 4
-        summary: ">60th percentile speed",
-      },
-      {
-        // 5
-        summary: ">75th percentile speed",
-      },
-    ],
-  },
-  <TrackDefinition>{
-    track: Tracks.Quality,
+    track: Tracks.Product,
     category: Categories.Craft,
     description:
-      "Number of bugs and errors divided by amount of output (purely subjective for now)",
+      "Understanding and contributing to the product, design, and UX aspects of a software system",
     milestones: [
       {
         // 0
-        summary: "Highest 15th percentile bugginess",
+        summary: technicalSummaryL0,
+        exampleBehaviors: [
+          "Does not consistently recognize or raise product, design, or usability issues",
+        ],
       },
       {
         // 1
-        summary: "<85th percentile bugginess",
+        summary: technicalSummaryL1,
+        exampleBehaviors: [
+          "Typically recognizes when product specifications are unclear and asks for clarification",
+          "May not identify all style inconsistencies (e.g. button misalignment, style not adhering to guidelines)",
+        ],
       },
       {
         // 2
-        summary: "<70th percentile bugginess",
+        summary: technicalSummaryL2,
+        exampleBehaviors: [
+          "Consistently questions product/design considerations that are inconsistent or may have been overlooked",
+          "Offers some suggestions about how to resolve product/design questions",
+        ],
       },
       {
         // 3
-        summary: "<55th percentile bugginess",
+        summary: technicalSummaryL3,
+        exampleBehaviors: [
+          "Proposes well-reasoned product/design considerations in response to ambiguity or contradiction",
+          "Writes clear and consistent requirements",
+          "Takes information architecture into account when defining product",
+        ],
+        exampleResponsibilities: [
+          "Writing user stories",
+          "Breaking down an epic into clear, complete, and consistently-scoped tasks",
+          "Writing a competitive market analysis for a tool or feature",
+        ],
       },
       {
         // 4
-        summary: "<40th percentile bugginess",
+        summary: technicalSummaryL4,
+        exampleBehaviors: [
+          "Consistently applies fundamental best practices to designs (e.g. interaction design, visual design)",
+          "Makes nuanced use of qualitative and quantitative data to choose between different design approaches",
+        ],
+        exampleResponsibilities: [
+          "Being a product owner for a team or product area",
+          "Prioritizing a product backlog, effectively balancing input from multiple stakeholders",
+          "Planning and conducting user research studies",
+        ],
       },
       {
         // 5
-        summary: "<25th percentile bugginess",
+        summary: technicalSummaryL5,
+        exampleBehaviors: [
+          "Takes into account the holistic aggregate of all considerations affecting a product",
+        ],
+        exampleResponsibilities: [
+          "Steering product strategy for an entire division/company",
+          "Setting a cohesive product research plan for an organization",
+        ],
       },
     ],
   },
