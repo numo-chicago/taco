@@ -46,6 +46,7 @@ export const milestonesToPoints = {
  * Sub-levels indicated by a decimal receive different compensation but are grouped into the same title.
  */
 export const pointsToLevels = {
+  "0": "0",
   // 14x1
   // +8
   "14": "1.1",
