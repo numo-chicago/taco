@@ -551,12 +551,14 @@ export const trackDefinitions: TrackDefinition[] = [
         summary: technicalSummaryL3,
         exampleBehaviors: [
           "Proposes well-reasoned product/design considerations in response to ambiguity or contradiction",
-          "Writes clear and consistent requirements",
+          "Writes clear, concise, and consistent requirements",
           "Takes information architecture into account when defining product",
+          "Uses analytics/data to justify product decisions",
         ],
         exampleResponsibilities: [
           "Writing user stories",
           "Breaking down an epic into clear, complete, and consistently-scoped tasks",
+          "Adding sensible components to a component library as needed",
           "Writing a competitive market analysis for a tool or feature",
         ],
       },
@@ -566,10 +568,12 @@ export const trackDefinitions: TrackDefinition[] = [
         exampleBehaviors: [
           "Consistently applies fundamental best practices to designs (e.g. interaction design, visual design)",
           "Makes nuanced use of qualitative and quantitative data to choose between different design approaches",
+          "Spontaneously identifies gaps in current analytics data and paths to improvement",
         ],
         exampleResponsibilities: [
           "Being a product owner for a team or product area",
           "Prioritizing a product backlog, effectively balancing input from multiple stakeholders",
+          "Prototyping a significant feature without needing direction",
           "Planning and conducting user research studies",
         ],
       },
@@ -582,6 +586,7 @@ export const trackDefinitions: TrackDefinition[] = [
         exampleResponsibilities: [
           "Steering product strategy for an entire division/company",
           "Setting a cohesive product research plan for an organization",
+          "Coaching product managers",
         ],
       },
     ],
