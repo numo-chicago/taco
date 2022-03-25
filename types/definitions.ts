@@ -618,7 +618,7 @@ export const trackDefinitions: TrackDefinition[] = [
           "Reliably completes assigned work without further oversight",
           "Resolves most task impediments without assistance",
           "Asks for help when appropriate and relevant",
-          "Spontanously collaborates with others when appropriate and relevant",
+          "Spontaneously collaborates with others when appropriate and relevant",
           "May occasionally still ask for help too much or too little",
         ],
         exampleResponsibilities: [
@@ -643,6 +643,7 @@ export const trackDefinitions: TrackDefinition[] = [
         // 4
         summary: "Leader",
         exampleBehaviors: [
+          "Spontaneously self-aligns with the best interests of the broader organization",
           "Seeks and builds consensus where appropriate and relevant",
           "Forms and disbands groups as necessary",
         ],
@@ -655,8 +656,8 @@ export const trackDefinitions: TrackDefinition[] = [
         // 5
         summary: "Self-directed",
         exampleBehaviors: [
-          "Autonomously directs self and others without any oversight",
-          "Ensures synchronization with larger business strategy",
+          "Autonomously directs self and others effectively",
+          "Sets and ensures synchronization with larger business strategy",
         ],
         exampleResponsibilities: [
           "Defining business goals",
@@ -729,7 +730,7 @@ export const trackDefinitions: TrackDefinition[] = [
     track: Tracks.Process,
     category: Categories.Professional,
     description:
-      "Abillity to understand, follow, and improve our software development process",
+      "Ability to understand, follow, and improve our software development process",
     milestones: [
       {
         // 0
@@ -808,7 +809,7 @@ export const trackDefinitions: TrackDefinition[] = [
           "May make spelling and grammar errors, but not severe enough to significantly impede understanding",
         ],
         exampleResponsibilities: [
-          "Articulating logic behind technical descisions to the Engineering team",
+          "Articulating logic behind technical decisions to the Engineering team",
         ],
       },
       {
@@ -844,7 +845,7 @@ export const trackDefinitions: TrackDefinition[] = [
         ],
         exampleResponsibilities: [
           "Explaining a highly complicated technical topic to non-technical people",
-          "Helping to clairfy others' messages in team meetings whenever possible as you recognize a breakdown in communication",
+          "Helping to clarify others' messages in team meetings whenever possible as you recognize a breakdown in communication",
           "Organizing and leading meetings where you recognize the benefit of verbal or personal communication over other forms",
         ],
       },
@@ -881,7 +882,7 @@ export const trackDefinitions: TrackDefinition[] = [
         summary: "Professional conduct",
         exampleBehaviors: [
           "Adheres to expected professional workplace norms",
-          "Keeps confidental or personal information in confidence",
+          "Keeps confidential or personal information in confidence",
         ],
       },
       {
@@ -946,7 +947,7 @@ export const trackDefinitions: TrackDefinition[] = [
       },
       {
         // 1
-        summary: "Mutual assitance",
+        summary: "Mutual assistance",
         exampleBehaviors: ["Pairs effectively with others on tasks"],
         exampleResponsibilities: [
           "Teaching someone how a specific component works",
@@ -1052,7 +1053,7 @@ export const trackDefinitions: TrackDefinition[] = [
         summary: "Leader",
         exampleBehaviors: [
           "Consistently earns trust of direct reports",
-          "Improves process within team where defic",
+          "Improves process within team where deficient",
         ],
         exampleResponsibilities: [
           "Improving and standardizing annual review procedures across teams",

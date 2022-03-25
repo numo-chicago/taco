@@ -14,7 +14,7 @@ If you think someone is at the wrong level, you can run the numbers yourself. If
 
 ##### Diversity is embraced
 
-A successful engineering organization does not consist of a homogeneous group of ninja hackers crushing the code exactly the same way. By explicitly valuing a wide range of skills, we can encourage the unique contributions that each indvidual brings to the team. Diversity makes us more flexible and creative.
+A successful engineering organization does not consist of a homogeneous group of ninja hackers crushing the code exactly the same way. By explicitly valuing a wide range of skills, we can encourage the unique contributions that each individual brings to the team. Diversity makes us more flexible and creative.
 
 ##### Clear path to advancement
 
@@ -26,7 +26,7 @@ Each manager level is tied to a corresponding maker level so you don't have to g
 
 ##### Performance evaluation is easy
 
-Proponents of strong CI/CD systems argue that when deployment is easy, you will naturally do it more often. The same applies for performance evluation. If you do it continuously, you catch bugs fast and will be much less likely to end up with large breaking changes.
+Proponents of strong CI/CD systems argue that when deployment is easy, you will naturally do it more often. The same applies for performance evaluation. If you do it continuously, you catch bugs fast and will be much less likely to end up with large breaking changes.
 
 ## Overview
 
@@ -38,32 +38,32 @@ In order to advance to the next `tier`, you must accumulate a certain number of 
 
 Each track encapsulates a group of related knowledge and abilities, such as front-end development or communication skills.
 
-The different tracks are grouped into a few high-level `categories`, such as technical skills. In addition to a points requirement, each level advancement requires that you achieve an increasingly high minimum number of points in every category. You can't truly achieve higher levels of effectivness if some of your skills are lagging too far behind.
+The different tracks are grouped into a few high-level `categories`, such as technical skills. In addition to a points requirement, each level advancement requires that you achieve an increasingly high minimum number of points in every category. You can't truly achieve higher levels of effectiveness if some of your skills are lagging too far behind.
 
 Since this is an engineering career growth framework, there are intentionally more tracks available in the `technical` category.
 
 The dedicated `management` track will not be relevant for non-managers. It is intended to offset the fact that most managers become more hands-off and are not spending as much time advancing their technical skills. For non-managers, even those with management experience, this should be evaluated as a zero.
 
-##### Milestones 
+##### Milestones
 
 A milestone rating should represent the skills and behaviors a person can currently and consistently produce in a given track.
 
 Milestones are defined from 0 to 5. The "base class" implementation of each level follows this progression:
 
-| Milestone | Skill Level            | Scope of Responsibility       |
-|:---------:|:-----------------------|:------------------------------|
-| 0         | No proven track record | None                          |
-| 1         | Basic proficiency      | Simple task or component      |
-| 2         | Reliable contributor   | Complex task or component     |
-| 3         | Starting to lead       | Small team or project         |
-| 4         | Reliable leader        | Large team or milestone       |
-| 5         | Leader of leaders      | Entire organization           |
+| Milestone | Skill Level            | Scope of Responsibility   |
+| :-------: | :--------------------- | :------------------------ |
+|     0     | No proven track record | None                      |
+|     1     | Basic proficiency      | Simple task or component  |
+|     2     | Reliable contributor   | Complex task or component |
+|     3     | Starting to lead       | Small team or project     |
+|     4     | Reliable leader        | Large team or project     |
+|     5     | Leader of leaders      | Entire organization       |
 
 Each milestone should build upon everything from all the levels below it. For example, a milestone 3 rating implies all of the skills and behaviors of milestones 1 and 2 as well.
 
-The examples provided in the tool are intended as an illustration -- not necessarily a checklist, and certainly not an exhustive list. When in doubt, use the chart above to give grounding to an evaluation.
+The examples provided in the tool are intended as an illustration -- not necessarily a checklist, and certainly not an exhaustive list. When in doubt, use the chart above to give grounding to an evaluation.
 
-Having abilities that are _current_ does not necessarily require recent experience. Some engineers may not have worked on SQL for several years, but could still pick up a SQL task tomorrow at their previous level of proficiency; they should continue to be rated at their previous level of proven ability. Other engineers may be rusty after not using a skill for several years; they should be adjusted downward to match their current abilities.
+Having abilities that are _current_ does not necessarily require _recent_ experience. Some engineers may not have worked on SQL for several years, but could still pick up a SQL task tomorrow at their previous level of proficiency; they should continue to be rated at their previous level of proven ability. Other engineers may be rusty after not using a skill for several years; they should be adjusted downward to match their current abilities.
 
 Demonstrating a milestone _consistently_ means that there have been no significant lapses during the last several months. No one is ever 100% perfect, but proving proficiency requires consistency. Many people will occasionally or sporadically demonstrate a level of proficiency one or two levels higher than they can produce reliably.
 
@@ -74,13 +74,13 @@ For most tiers, the ratings of a well balanced team should form a normal distrib
 Each tier earns a base salary increase, while each level earns a new title:
 
 | Level | Maker Track Title            | Manager Track Title        |
-|:-----:|:-----------------------------|:---------------------------|
-| 0     | Apprentice Software Engineer |                            |
-| 1     | Junior Software Engineer     |                            |
-| 2     | Software Engineer            |                            |
-| 3     | Senior Software Engineer     | Engineering Manager        |
-| 4     | Staff Software Engineer      | Senior Engineering Manager |
-| 5     | Principal Software Engineer  | Director of Engineering    |
+| :---: | :--------------------------- | :------------------------- |
+|   0   | Apprentice Software Engineer |                            |
+|   1   | Junior Software Engineer     |                            |
+|   2   | Software Engineer            |                            |
+|   3   | Senior Software Engineer     | Engineering Manager        |
+|   4   | Staff Software Engineer      | Senior Engineering Manager |
+|   5   | Principal Software Engineer  | Director of Engineering    |
 
 The role expectations for each level roughly correspond with the description of its corresponding milestone. For example, both senior engineers and engineering managers are at a place in their careers where they are starting to lead.
 
@@ -92,9 +92,9 @@ You should already be having regularly scheduled 1:1s with your people every one
 
 For each track, share what milestone you each put for that track.
 
-* If the numbers are identical, you are in agreement. Don't waste time hashing it out unless there are questions about how to improve the rating.
-* If the numbers are different by one, ask if there's anything that needs to be discussed. Many ratings could go either way ("I think I'm a 2 or 3, so I put 3") so there's often not any real disagreement here. Spend a minute or two naming the factors behind the rating and highlight why you each chose what you did.
-* If the numbers are different by two or more, this is a serious disconnect. However, it is normal for this to happen periodically, so resolve the misunderstanding as nonjudgmentally and objectively as possible. Spend several minutes reviewing the milestone definitions and discussing why each of you chose the milestone you did.
+- If the numbers are identical, you are in agreement. Don't waste time hashing it out unless there are questions about how to improve the rating.
+- If the numbers are different by one, ask if there's anything that needs to be discussed. Many ratings could go either way ("I think I'm a 2 or 3, so I put 3") so there's often not any real disagreement here. Spend a minute or two naming the factors behind the rating and highlight why you each chose what you did.
+- If the numbers are different by two or more, this is a serious disconnect. However, it is normal for this to happen periodically, so resolve the misunderstanding as non-judgmentally and objectively as possible. Spend several minutes reviewing the milestone definitions and discussing why each of you chose the milestone you did.
 
 At the end, look at the final result and discuss whether it seems like a fair and accurate assessment. This tool is a work in progress, so be sure to ask whether it missed anything and take any critical feedback seriously.
 
