@@ -16,8 +16,7 @@ export enum Tracks {
   Ops,
   // Craft
   Architecture,
-  Quantity,
-  Quality,
+  Product,
   // Professional
   Independence,
   Organization,
@@ -48,17 +47,28 @@ export const milestonesToPoints = {
  */
 export const pointsToLevels = {
   "0": "0",
-  "15": "1.1", // 15x1
-  "23": "1.2",
-  "31": "1.3",
-  "42": "2.1", // 14x3
-  "56": "2.2",
-  "70": "2.3",
-  "89": "3.1", // 13x6
-  "104": "3.2",
-  "120": "4.1", // 12x10
-  "140": "4.2",
-  "165": "5", // 11x15
+  // 14x1
+  // +8
+  "14": "1.1",
+  "22": "1.2",
+  "30": "1.3",
+  // 13x3
+  // +10
+  "39": "2.1",
+  "49": "2.2",
+  "59": "2.3",
+  // 12x6
+  // +12
+  "72": "3.1",
+  "84": "3.2",
+  "96": "3.3",
+  // 11x10
+  // +13
+  "110": "4.1",
+  "123": "4.2",
+  "136": "4.3",
+  // 10x15
+  "150": "5",
 };
 
 /**
@@ -508,65 +518,76 @@ export const trackDefinitions: TrackDefinition[] = [
     ],
   },
   <TrackDefinition>{
-    track: Tracks.Quantity,
-    category: Categories.Craft,
-    description: "Amount of output divided by time (purely subjective for now)",
-    milestones: [
-      {
-        // 0
-        summary: "Lowest 15th percentile speed",
-      },
-      {
-        // 1
-        summary: ">15th percentile speed",
-      },
-      {
-        // 2
-        summary: ">30th percentile speed",
-      },
-      {
-        // 3
-        summary: ">45th percentile speed",
-      },
-      {
-        // 4
-        summary: ">60th percentile speed",
-      },
-      {
-        // 5
-        summary: ">75th percentile speed",
-      },
-    ],
-  },
-  <TrackDefinition>{
-    track: Tracks.Quality,
+    track: Tracks.Product,
     category: Categories.Craft,
     description:
-      "Number of bugs and errors divided by amount of output (purely subjective for now)",
+      "Understanding and contributing to the product, design, and UX aspects of a software system",
     milestones: [
       {
         // 0
-        summary: "Highest 15th percentile bugginess",
+        summary: technicalSummaryL0,
+        exampleBehaviors: [
+          "Does not consistently recognize or raise product, design, or usability issues",
+        ],
       },
       {
         // 1
-        summary: "<85th percentile bugginess",
+        summary: technicalSummaryL1,
+        exampleBehaviors: [
+          "Typically recognizes when product specifications are unclear and asks for clarification",
+          "May not identify all style inconsistencies (e.g. button misalignment, style not adhering to guidelines)",
+        ],
       },
       {
         // 2
-        summary: "<70th percentile bugginess",
+        summary: technicalSummaryL2,
+        exampleBehaviors: [
+          "Consistently questions product/design considerations that are inconsistent or may have been overlooked",
+          "Offers some suggestions about how to resolve product/design questions",
+        ],
       },
       {
         // 3
-        summary: "<55th percentile bugginess",
+        summary: technicalSummaryL3,
+        exampleBehaviors: [
+          "Proposes well-reasoned product/design considerations in response to ambiguity or contradiction",
+          "Writes clear, concise, and consistent requirements",
+          "Takes information architecture into account when defining product",
+          "Uses analytics/data to justify product decisions",
+        ],
+        exampleResponsibilities: [
+          "Writing user stories",
+          "Breaking down an epic into clear, complete, and consistently-scoped tasks",
+          "Adding sensible components to a component library as needed",
+          "Writing a competitive market analysis for a tool or feature",
+        ],
       },
       {
         // 4
-        summary: "<40th percentile bugginess",
+        summary: technicalSummaryL4,
+        exampleBehaviors: [
+          "Consistently applies fundamental best practices to designs (e.g. interaction design, visual design)",
+          "Makes nuanced use of qualitative and quantitative data to choose between different design approaches",
+          "Spontaneously identifies gaps in current analytics data and paths to improvement",
+        ],
+        exampleResponsibilities: [
+          "Being a product owner for a team or product area",
+          "Prioritizing a product backlog, effectively balancing input from multiple stakeholders",
+          "Prototyping a significant feature without needing direction",
+          "Planning and conducting user research studies",
+        ],
       },
       {
         // 5
-        summary: "<25th percentile bugginess",
+        summary: technicalSummaryL5,
+        exampleBehaviors: [
+          "Takes into account the holistic aggregate of all considerations affecting a product",
+        ],
+        exampleResponsibilities: [
+          "Steering product strategy for an entire division/company",
+          "Setting a cohesive product research plan for an organization",
+          "Coaching product managers",
+        ],
       },
     ],
   },
@@ -597,7 +618,7 @@ export const trackDefinitions: TrackDefinition[] = [
           "Reliably completes assigned work without further oversight",
           "Resolves most task impediments without assistance",
           "Asks for help when appropriate and relevant",
-          "Spontanously collaborates with others when appropriate and relevant",
+          "Spontaneously collaborates with others when appropriate and relevant",
           "May occasionally still ask for help too much or too little",
         ],
         exampleResponsibilities: [
@@ -622,6 +643,7 @@ export const trackDefinitions: TrackDefinition[] = [
         // 4
         summary: "Leader",
         exampleBehaviors: [
+          "Spontaneously self-aligns with the best interests of the broader organization",
           "Seeks and builds consensus where appropriate and relevant",
           "Forms and disbands groups as necessary",
         ],
@@ -634,8 +656,8 @@ export const trackDefinitions: TrackDefinition[] = [
         // 5
         summary: "Self-directed",
         exampleBehaviors: [
-          "Autonomously directs self and others without any oversight",
-          "Ensures synchronization with larger business strategy",
+          "Autonomously directs self and others effectively",
+          "Sets and ensures synchronization with larger business strategy",
         ],
         exampleResponsibilities: [
           "Defining business goals",
@@ -708,7 +730,7 @@ export const trackDefinitions: TrackDefinition[] = [
     track: Tracks.Process,
     category: Categories.Professional,
     description:
-      "Abillity to understand, follow, and improve our software development process",
+      "Ability to understand, follow, and improve our software development process",
     milestones: [
       {
         // 0
@@ -787,7 +809,7 @@ export const trackDefinitions: TrackDefinition[] = [
           "May make spelling and grammar errors, but not severe enough to significantly impede understanding",
         ],
         exampleResponsibilities: [
-          "Articulating logic behind technical descisions to the Engineering team",
+          "Articulating logic behind technical decisions to the Engineering team",
         ],
       },
       {
@@ -823,7 +845,7 @@ export const trackDefinitions: TrackDefinition[] = [
         ],
         exampleResponsibilities: [
           "Explaining a highly complicated technical topic to non-technical people",
-          "Helping to clairfy others' messages in team meetings whenever possible as you recognize a breakdown in communication",
+          "Helping to clarify others' messages in team meetings whenever possible as you recognize a breakdown in communication",
           "Organizing and leading meetings where you recognize the benefit of verbal or personal communication over other forms",
         ],
       },
@@ -860,7 +882,7 @@ export const trackDefinitions: TrackDefinition[] = [
         summary: "Professional conduct",
         exampleBehaviors: [
           "Adheres to expected professional workplace norms",
-          "Keeps confidental or personal information in confidence",
+          "Keeps confidential or personal information in confidence",
         ],
       },
       {
@@ -925,7 +947,7 @@ export const trackDefinitions: TrackDefinition[] = [
       },
       {
         // 1
-        summary: "Mutual assitance",
+        summary: "Mutual assistance",
         exampleBehaviors: ["Pairs effectively with others on tasks"],
         exampleResponsibilities: [
           "Teaching someone how a specific component works",
@@ -1031,7 +1053,7 @@ export const trackDefinitions: TrackDefinition[] = [
         summary: "Leader",
         exampleBehaviors: [
           "Consistently earns trust of direct reports",
-          "Improves process within team where defic",
+          "Improves process within team where deficient",
         ],
         exampleResponsibilities: [
           "Improving and standardizing annual review procedures across teams",
